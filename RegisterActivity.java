@@ -1,5 +1,7 @@
 package com.example.aplicativo_senac;
 
+//aqui esão as importações
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
+//aqui esão as caixas de texto
     private EditText emailEditText, usernameEditText, passwordEditText, confirmPasswordEditText;
     private CheckBox novidadesCheckBox, termosCheckBox;
 
@@ -106,4 +109,4 @@ public class RegisterActivity extends AppCompatActivity {
         return (!TextUtils.isEmpty(password) && password.length() >= 8 && password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).*$"));
     }
 }
-//temos que adiconar um método para o back end
+//temos que adiconar um método para o backend
